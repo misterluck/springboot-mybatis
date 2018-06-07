@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="org.demo.springbootmybatis.mapper.ProvinceMapper">
-    <resultMap id="BaseResultMap" type="org.demo.springbootmybatis.model.Province">
+<mapper namespace="org.demo.springbootmybatis.mapper.CityMapper">
+    <resultMap id="BaseResultMap" type="org.demo.springbootmybatis.model.City">
         <result property="id" column="id"/>
         <result property="code" column="code"/>
         <result property="name" column="name"/>
         <result property="description" column="description"/>
-        <result property="countryId" column="country_id"/>
+        <result property="provinceId" column="province_id"/>
     </resultMap>
     <sql id="PUBLIC_COLUMN">
-        ID, CODE, NAME, DESCRIPTION, COUNTRY_ID
+        ID, CODE, NAME, DESCRIPTION, PROVINCE_ID
     </sql>
 
-    <select id="selectAllProvince" resultMap="BaseResultMap">
+    <select id="selectAllCity" resultMap="BaseResultMap">
         SELECT <include refid="PUBLIC_COLUMN"/>
-        FROM province
+        FROM city
     </select>
 </mapper>
