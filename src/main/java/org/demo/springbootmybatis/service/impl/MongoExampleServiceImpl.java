@@ -1,7 +1,5 @@
 package org.demo.springbootmybatis.service.impl;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import com.mongodb.gridfs.GridFSDBFile;
 import org.demo.springbootmybatis.model.MongoEntity;
 import org.demo.springbootmybatis.service.MongoExampleService;

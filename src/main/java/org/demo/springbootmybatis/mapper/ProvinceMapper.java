@@ -1,10 +1,8 @@
 package org.demo.springbootmybatis.mapper;
 
-import com.github.pagehelper.Page;
 import org.apache.ibatis.annotations.Mapper;
 import org.demo.springbootmybatis.model.Province;
 
-import java.util.List;
 
 /**
  * Created by zhaol on 2017/12/22.
@@ -12,7 +10,5 @@ import java.util.List;
  */
 @Mapper
 public interface ProvinceMapper {
-
-    Page<Province> selectAllProvince();
 
 }

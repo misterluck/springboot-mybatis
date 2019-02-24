@@ -5,6 +5,8 @@ package org.demo.springbootmybatis.service;
  */
 public interface RedisExampleService {
     void save();
-    String show();
+    void saveList();
+    void removeList();
+    void show();
     void trim();
 }

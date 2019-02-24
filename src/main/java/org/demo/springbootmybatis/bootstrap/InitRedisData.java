@@ -11,11 +11,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class InitRedisData implements InitializingBean {
 
+
     @Autowired
     private RedisExampleService redisExampleService;
 
     @Override
     public void afterPropertiesSet() throws Exception {
         //redisExampleService.trim();
+
+
     }
 }
